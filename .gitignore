@@ -5,3 +5,4 @@ __pycache__/
 
 pictures/
 predictions/
+cnn_captcha/

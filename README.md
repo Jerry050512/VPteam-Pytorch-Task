@@ -14,3 +14,7 @@ pip install -r requirements.txt
 
 `salient-object-detection.ipynb` 实现了显著性图片生成，
 并测试了`./test/recaptcha/pictures`中的图片。
+
+### Task-3 验证码预测
+
+`captcha_predict.ipynb` 实现了验证码预测。
