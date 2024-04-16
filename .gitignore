@@ -1,8 +1,11 @@
 dataset/
 output/
+imgs/
 saved_models/
 __pycache__/
 
 pictures/
 predictions/
 cnn_captcha/
+
+*.pth

@@ -9,6 +9,8 @@ replace_rule = {
     "Z": "2",
 }
 
+gen_num = 1000
+
 # 创建一个ImageCaptcha实例
 image = ImageCaptcha(width=280, height=90)
 
@@ -20,7 +22,7 @@ if not os.path.exists(output_dir):
 # 创建并打开filename.lst文件
 with open(os.path.join(output_dir, 'filename.lst'), 'w') as f:
     # 生成100张验证码图片
-    for i in range(100):
+    for i in range(gen_num):
         # 生成随机的四位验证码
         captcha_text = ''.join(random.choices(string.ascii_uppercase + string.digits, k=4))
         for k, v in replace_rule.items():
@@ -34,4 +36,4 @@ with open(os.path.join(output_dir, 'filename.lst'), 'w') as f:
         # 将文件名写入filename.lst
         f.write(file_name + '\n')
 
-print(f"100张验证码图片已生成在{output_dir}目录中，并且文件名已记录在filename.lst文件中。")
+print(f"{gen_num}张验证码图片已生成在{output_dir}目录中，并且文件名已记录在filename.lst文件中。")
