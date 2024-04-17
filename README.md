@@ -18,3 +18,7 @@ pip install -r requirements.txt
 ### Task-3 验证码预测
 
 `captcha_predict.ipynb` 实现了验证码预测。
+
+### Task-4 抠图
+
+`image-matting.ipynb` 实现了利用BASNet抠图。
